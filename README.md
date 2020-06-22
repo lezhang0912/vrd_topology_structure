@@ -2,7 +2,7 @@
 
 # **Visual relationship detection with region topology structure**
 
-This repository is about the code implementation of paper-Visual relationship detection with region topology structure. Here, we are very grateful for the public code provided by Liang et al. [https://github.com/GriffinLiang/vrd-dsr]() The work of this paper is closely related to this.
+This repository is about the code implementation of paper-Visual relationship detection with region topology structure. Here, we are very grateful for the public code provided by Liang et al. [vrd-dsr](https://github.com/GriffinLiang/vrd-dsr) The work of this paper is closely related to this.
 
 ------
 
@@ -26,7 +26,7 @@ This repository is about the code implementation of paper-Visual relationship de
 
 *vrd dataset*
 
-Download from [https://drive.google.com/file/d/158EyLESdU-et6iHu1-NK4dwVouHJKBNa/view?usp=sharing]()
+Download from [vrd dataset](https://drive.google.com/file/d/158EyLESdU-et6iHu1-NK4dwVouHJKBNa/view?usp=sharing)
 
 *unzip file* 
 
@@ -36,7 +36,7 @@ Download from [https://drive.google.com/file/d/158EyLESdU-et6iHu1-NK4dwVouHJKBNa
 
 *vg dataset*
 
-Download from [https://drive.google.com/file/d/1FL3bSW7owthjpKdv2uileOSkKtiO_XN9/view?usp=sharing]()
+Download from [vg dataset](https://drive.google.com/file/d/1FL3bSW7owthjpKdv2uileOSkKtiO_XN9/view?usp=sharing)
 
 *unzip file* 
 
@@ -44,7 +44,7 @@ Download from [https://drive.google.com/file/d/1FL3bSW7owthjpKdv2uileOSkKtiO_XN9
 
 `cp -r  your/vg/download/path/*  ./`
 
-Please download vg images  from [https://visualgenome.org/api/v0/api_home.html]()
+Please download vg images  from [vg images](https://visualgenome.org/api/v0/api_home.html)
 
 merge images to a file
 
@@ -56,7 +56,7 @@ next build soft link
 
 *vrd weight*
 
-Download from [https://drive.google.com/file/d/1sUzKO27mTvwgAbuk1Do7oXRHnDeUjaps/view?usp=sharing]()
+Download from [vrd weight](https://drive.google.com/file/d/1sUzKO27mTvwgAbuk1Do7oXRHnDeUjaps/view?usp=sharing)
 
 `cd data/pretrained_model/vrd/`
 
@@ -64,7 +64,7 @@ Download from [https://drive.google.com/file/d/1sUzKO27mTvwgAbuk1Do7oXRHnDeUjaps
 
 *vg weight*
 
-Download from [https://drive.google.com/file/d/1OtHN4jzxp0fJWo20aPnDsAD17KG7bhl_/view?usp=sharing]()
+Download from [vg weight](https://drive.google.com/file/d/1OtHN4jzxp0fJWo20aPnDsAD17KG7bhl_/view?usp=sharing)
 
 `cd data/pretrained_model/vg/`
 
