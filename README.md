@@ -1,4 +1,4 @@
-![avatar](img\VRD_topoloy structure copy.PNG)
+![image](github.com/lezhang0912/vrd_topology_structure/blob/master/img/VRD_topoloy%20structure%20copy.PNG)
 
 # **Visual relationship detection with region topology structure**
 
