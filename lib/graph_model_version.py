@@ -249,6 +249,7 @@ def test_rel_gat(rel_net, device, topk, args):
 
 
         anno_img = anno[step]
+        rel_score = F.softmax(rel_score, -1)
         rel_prob = rel_score.data.cpu().numpy()
         # why added this item, normalize
         rel_prob += np.log(0.5 * (rel_so_prior + 1.0 / test_data_layer._num_relations))
@@ -267,12 +268,10 @@ def test_rel_gat(rel_net, device, topk, args):
             if (args.use_obj_prior):
                 if (pred_confs.ndim == 1):
 
-                    conf = np.log(pred_confs[ix1[tuple_idx]]) + np.log(pred_confs[ix2[tuple_idx]]) + rel_prob[tuple_idx,
-                                                                                                     :]
+                    conf = pred_confs[ix1[tuple_idx]]) * pred_confs[ix2[tuple_idx]] * rel_prob[tuple_idx, :]
 
                 else:
-                    conf = np.log(pred_confs[ix1[tuple_idx], 0]) + np.log(pred_confs[ix2[tuple_idx], 0]) + rel_prob[
-                                                                                                           tuple_idx, :]
+                    conf = pred_confs[ix1[tuple_idx], 0] * pred_confs[ix2[tuple_idx], 0] * rel_prob[tuple_idx, :]
 
             else:
                 conf = rel_prob[tuple_idx, :]
