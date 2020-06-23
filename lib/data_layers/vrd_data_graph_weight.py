@@ -425,9 +425,9 @@ class VrdDataLayer_weight(object):
                 self._cur = 0
             return None
 
-        boxes_img = np.array(self._boxes[self._cur].cpu())
-        pred_cls_img = np.array(self._pred_cls[self._cur].cpu()).astype(dtype=np.int)
-        pred_confs_img = np.array(self._pred_confs[self._cur].cpu())
+        boxes_img = np.array(self._boxes[self._cur])
+        pred_cls_img = np.array(self._pred_cls[self._cur]).astype(dtype=np.int)
+        pred_confs_img = np.array(self._pred_confs[self._cur])
 
         if (boxes_img.shape[0] < 2):
             self._cur += 1
