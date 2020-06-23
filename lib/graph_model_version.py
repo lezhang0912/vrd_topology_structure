@@ -243,8 +243,8 @@ def test_rel_gat(rel_net, device, topk, args):
         unknown_emb = torch.from_numpy(unknown_emb).to(device=device, dtype=torch.float)
         class_embed = torch.from_numpy(label_embeded).to(device=device, dtype=torch.float)
 
-    with torch.no_grad():
-        rel_score, obj_score = rel_net(image_blob, boxes, rel_boxes, spaFea, ix1, ix2, class_embed, \
+        with torch.no_grad():
+            rel_score, obj_score = rel_net(image_blob, boxes, rel_boxes, spaFea, ix1, ix2, class_embed, \
                                        unknown_emb, edge_rel, edge_weight, args)
 
 
