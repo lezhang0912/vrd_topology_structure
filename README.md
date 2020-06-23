@@ -120,7 +120,7 @@ In the training phase, after training an epoch, we will conduct a Pre Det task e
 
 for example: vrd dataset
 
-``python  test_graph.py --ds_name vrd --device gpu--model_type  Faster-RCNN --proposal  ../data/faster-rcnn-detection/x101_proposals.pkl  --resume ../data/pretrained_model/vrd/epoch_4_session_4_vrd_graph_rel.pth``
+``python  test_graph.py --ds_name vrd --device gpu--model_type  Faster-RCNN --proposal  ../data/faster-rcnn-detection/x101_test_proposals_20.pkl  --resume ../data/pretrained_model/vrd/epoch_4_session_4_vrd_graph_rel.pth``
 
 ## Citation
 
