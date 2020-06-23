@@ -22,23 +22,25 @@ This repository is about the code implementation of paper-Visual relationship de
 
 ## Build directory
 
-'mkdir data/cache' # caching file
+```
+mkdir data/cache # caching file
 
-'mkdir data/pretrained_model' # model checkpoint
+mkdir data/pretrained_model # model checkpoint
 
-'mkdir data/pretrained_model/vg'
+mkdir data/pretrained_model/vg
 
-'mkdir data/pretrained_model/vrd'
+mkdir data/pretrained_model/vrd
 
-'mkdir data/vrd' # vrd dataset file
+mkdir data/vrd # vrd dataset file
 
-'mkdir data/vg' # vg dataset file
+mkdir data/vg # vg dataset file
 
-'mkdir experiment' # print result of each session
+mkdir experiment # print result of each session
 
-'mkdir logs' # logs file
+mkdir logs # logs file
 
-'mkdir models' # resnet_101 pretrained weight file
+mkdir models # resnet_101 pretrained weight file
+```
 
 ## Prepare dataset
 
