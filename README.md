@@ -72,7 +72,7 @@ next build soft link
 
 `ln -s your/vg/images/path  ./images`
 
-## Load pre_trained weight
+## Load pre_trained weight 
 
 *vrd weight*
 
@@ -91,6 +91,12 @@ Download from [vg weight](https://drive.google.com/file/d/1OtHN4jzxp0fJWo20aPnDs
 `cp epoch_7_session_5_vg_graph_rel.pth  ./`
 
 ## Start training from scratch
+
+First, you should load resnet_101 pretrained weight on imagenet.
+
+Download [resnet_101 pretrained_weight](https://drive.google.com/file/d/1Wa5zpvdOdnZaMwsbQUxh0A1H9wGIKM8I/view?usp=sharing)
+
+`cp your/resnet_101_wegint_path/resnet101-5d3b4d8f.pth  models/`
 
 In the training phase, after training an epoch, we will conduct a Pre Det task evaluation.
 
